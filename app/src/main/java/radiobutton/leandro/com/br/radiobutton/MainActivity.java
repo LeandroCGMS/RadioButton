@@ -29,7 +29,7 @@ public class MainActivity extends Activity {
             public void onClick(View v) {
                 int idRadioButtonEscolhido = radioGroup.getCheckedRadioButtonId();
                 if( idRadioButtonEscolhido > 0){
-                    radioButtonEscolhido = (RadioButton) findViewById(R.id.content(idRadioButtonEscolhido));
+                    radioButtonEscolhido = (RadioButton) findViewById(R.id.idRadioButtonEscolhido);
                 }
             }
         });
