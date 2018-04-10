@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textoExibicaoId"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="159dp"
+            android:layout_weight="1"
+            android:textSize="25sp"
+            tools:layout_editor_absoluteX="309dp"
+            tools:layout_editor_absoluteY="475dp" />
+
+        <Button
+            android:id="@+id/botaoEscolherId"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="92dp"
+            android:layout_weight="1"
+            android:text="Escolher"
+            tools:layout_editor_absoluteX="132dp"
+            tools:layout_editor_absoluteY="205dp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupId"
+            android:layout_width="200dp"
+            android:layout_height="130dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="64dp"
+            android:layout_weight="1">
+
+            <RadioButton
+                android:id="@+id/lasanhaId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Lasanha" />
+
+            <RadioButton
+                android:id="@+id/parmegianaId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Parmegiana" />
+
+            <RadioButton
+                android:id="@+id/macarraoId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Macarrão" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="57dp"
+            android:layout_weight="1"
+            android:text="@string/comida_preferida"
+            android:textSize="25sp" />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
